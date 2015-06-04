@@ -1,5 +1,5 @@
 <?php
-class CDNsunModxCdnIntegrationPlugin
+class CDNsunModxCdnPlugin
 {
     /*
      * Plugin for MODX CDN integration.
@@ -36,7 +36,7 @@ class CDNsunModxCdnIntegrationPlugin
         $this->_replacementMapExpiryTime = 86400; // 1 day (you don't need to change this)
 
         // get the _replacementMap from the local MODX cache
-        $this->_replacementMap = $this->modx->cacheManager->get('CDNsunModxCdnIntegrationPluginReplacementMap');
+        $this->_replacementMap = $this->modx->cacheManager->get('CDNsunModxCdnPluginReplacementMap');
         if(!is_array($this->_replacementMap)) 
         {
             // the first run or the _replacementMap has expired or the local MODX cache has been flushed
@@ -54,7 +54,7 @@ class CDNsunModxCdnIntegrationPlugin
         $output = preg_replace_callback('|<script(?:.+?)src\=\"(\S+)\"|', array($this ,'_getURL'), $output);
                 
         // update the local MODX cache
-        $this->modx->cacheManager->set('CDNsunModxCdnIntegrationPluginReplacementMap', $this->_replacementMap, $this->_replacementMapExpiryTime);
+        $this->modx->cacheManager->set('CDNsunModxCdnPluginReplacementMap', $this->_replacementMap, $this->_replacementMapExpiryTime);
 
         return $output;
     }
@@ -149,7 +149,7 @@ class CDNsunModxCdnIntegrationPlugin
 }
 
 $output = &$modx->resource->_output;
-$cdn = new CDNsunModxCdnIntegrationPlugin($modx);
+$cdn = new CDNsunModxCdnPlugin($modx);
 $output = $cdn->replaceURLs($output);
 
 // END CODE
