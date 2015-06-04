@@ -13,7 +13,7 @@ class CDNsunModxCdnPlugin
      * Please note that the plugin replaces only relative URLs, so for example
      * it will replace src="/photos/photo.jpg" but it will not replace src="http://domain.com/photos/photo.jpg"
      * 
-     * To configure the plugin just adjust the $this->_cdnServiceUrl variable in the __construct function below
+     * To configure the plugin just adjust the $this->_cdnServiceUrl variable in the __construct function
      * 
      */
     
