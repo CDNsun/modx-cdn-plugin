@@ -152,4 +152,4 @@ $output = &$modx->resource->_output;
 $cdn = new CDNsunModxCdnPlugin($modx);
 $output = $cdn->replaceURLs($output);
 
-// END CODE
+// END
