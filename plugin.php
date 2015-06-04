@@ -3,7 +3,7 @@ class CDNsunModxCdnIntegration
 {
     /*
      * Plugin for MODX CDN integration.
-     * The plugin replaces source URLs of your images, CSS and JS to CDN URLs. The plugin
+     * The plugin replaces source URLs of images, CSS and JS to CDN URLs. The plugin
      * replaces URL only if the corresponding CDN URL returns 200 response code.
      * To increase the performance the plugin does not replace (and test) URLs on the fly but
      * it creates an array of already successful replacement pairs and stores the array
