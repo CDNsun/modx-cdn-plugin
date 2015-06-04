@@ -16,3 +16,5 @@ Plugin for MODX CDN integration
      * To configure the plugin just adjust the $this->_cdnServiceUrl variable in the __construct function
      * 
      */
+
+    More details: http://cdnsun.com/knowledgebase/integrations/modx-cdn-integration
