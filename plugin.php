@@ -19,7 +19,7 @@ class CDNsunModxCdnPlugin
     
     private $_cdnServiceUrl;             // http(s)://service_domain or http(s)://service_identifier (your CDN base URL)
     private $_replacementMap;            // associative array (stored in the local MODX cache)
-                                         // of before_replacement (origin URL) => after_replacement pairs (CDN URL)
+                                         // of before_replacement (origin URL) => after_replacement (CDN URL) pairs
                                          // for replacement of image, CSS and JS source URLs to CDN URLs
     private $_replacementMapExpiryTime;  // expiry time of the _replacementMap (in seconds) in the local MODX cache
                                          // this ensures that the _replacementMap does not expire too often
