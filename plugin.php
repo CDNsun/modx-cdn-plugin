@@ -30,7 +30,7 @@ class CDNsunModxCdnPlugin
         $this->modx = $modx;
 
         // http(s)://service_domain or http(s)://service_identifier (your CDN domain)
-        $this->_cdnServiceUrl = 'http://static.mycompany.com';
+        $this->_cdnServiceUrl = 'http://12345.r.cdnsun.net';
 
         // expiry time of the _replacementMap in the local MODX cache (in seconds)
         $this->_replacementMapExpiryTime = 86400; // 1 day (you don't need to change this)
