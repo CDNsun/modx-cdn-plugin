@@ -18,3 +18,8 @@ Plugin for MODX CDN integration
      */
 
     More details: http://cdnsun.com/knowledgebase/integrations/modx-cdn-integration
+    
+CONTACT
+
+* W: https://cdnsun.com
+* E: info@cdnsun.com
