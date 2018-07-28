@@ -1,4 +1,4 @@
-# modx-cdn-plugin
+# MODX CDN Plugin
 Plugin for MODX CDN integration
 
     /*
